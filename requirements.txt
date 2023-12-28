@@ -1,0 +1,9 @@
+opencv-python
+mediapipe-rpi4
+mediapipe-rpi3
+requests
+python-dotenv
+picamera2
+Flask
+
+

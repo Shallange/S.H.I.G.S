@@ -1,0 +1,15 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Virtual environment
+.venv/
+
+# Environment variables
+.env
+
+# Authentication code file
+auth_code.txt
