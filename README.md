@@ -10,18 +10,19 @@ This project provides a gesture-controlled interface for Spotify, allowing users
 
 ## Project File Structure
 ```bash
-├── images
-│   └── screenshot.png
-├── [README.md](/README.md)
-├── [requirements.txt](/requirements.txt)
-└── src
-    ├── [auth_code.txt](/src/auth_code.txt)
-    ├── [auth_server.py](/src/auth_server.py)
-    ├── gesture_recognition
-    │   ├── [detector.py](/src/gesture_recognition/detector.py)
-    │   ├── [__init__.py](/src/gesture_recognition/__init__.py)
-    ├── [main.py](/src/main.py)
-    └── [spotify_controller.py](/src/spotify_controller.py)
+- **images**
+  - [screenshot.png](/images/screenshot.png)
+- [README.md](/README.md)
+- [requirements.txt](/requirements.txt)
+- **src**
+  - [auth_code.txt](/src/auth_code.txt)
+  - [auth_server.py](/src/auth_server.py)
+  - **gesture_recognition**
+    - [detector.py](/src/gesture_recognition/detector.py)
+    - [__init__.py](/src/gesture_recognition/__init__.py)
+  - [main.py](/src/main.py)
+  - [spotify_controller.py](/src/spotify_controller.py)
+
 ```
 
 ## Prerequisites
