@@ -1,5 +1,16 @@
 # Gesture-Controlled Spotify Player
 
+## Table of Contents
+- [Description](#description)
+- [Features](#features)
+- [Project File Structure](#project-file-structure)
+- [Prerequisites](#prerequisites)
+- [Setting Up Spotify Developer App](#setting-up-spotify-developer-app)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Mediapipe Hand Landmarks](#mediapipe-hand-landmarks)
+- [Gesture Commands](#gesture-commands)
+
 ## Description
 This project provides a gesture-controlled interface for Spotify, allowing users to control music playback through hand gestures. It's particularly useful in situations where hands are occupied or dirty, such as in the kitchen, or for users with speech difficulties.
 
@@ -9,9 +20,17 @@ This project provides a gesture-controlled interface for Spotify, allowing users
 - Utilizes Flask for handling Spotify OAuth and MediaPipe for gesture recognition.
 
 ## Project File Structure
-```bash
+
+
 - **images**
-  - [screenshot.png](/images/screenshot.png)
+  - [spotify_api.png](/images/spotify_api.png)
+  - [hand-landmarks.png](/images/hand-landmarks.png)
+  - [play_music.jpg](/images/play_music.jpg)
+  - [pause_music.jpg](/images/pause_music.jpg)
+  - [next_song.jpg](/images/next_song.jpg)
+  - [previous_song.jpg](/images/previous_song.jpg)
+  - [increase_volume.jpg](/images/increase_volume.jpg)
+  - [decrease_volume.jpg](/images/decrease_volume.jpg)
 - [README.md](/README.md)
 - [requirements.txt](/requirements.txt)
 - **src**
@@ -23,7 +42,7 @@ This project provides a gesture-controlled interface for Spotify, allowing users
   - [main.py](/src/main.py)
   - [spotify_controller.py](/src/spotify_controller.py)
 
-```
+
 
 ## Prerequisites
 - Raspberry Pi 4 with Raspbian OS "Bookworm"
