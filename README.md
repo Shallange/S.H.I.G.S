@@ -14,6 +14,9 @@
 ## Description
 This project provides a gesture-controlled interface for Spotify, allowing users to control music playback through hand gestures. It's particularly useful in situations where hands are occupied or dirty, such as in the kitchen, or for users with speech difficulties.
 
+Watch a demonstration of the Gesture-Controlled Spotify Player here:
+[Gesture-Controlled Spotify Player Demo](https://github.com/Shallange/S.H.I.G.S/assets/53408265/247b3f22-a7fd-4e50-97ee-97aaa33197d8)
+
 ## Features
 - Control Spotify playback using hand gestures.
 - Recognize gestures like play, pause, next track, previous track, increase and decrease volume.
