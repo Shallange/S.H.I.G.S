@@ -15,7 +15,7 @@
 This project provides a gesture-controlled interface for Spotify, allowing users to control music playback through hand gestures. It's particularly useful in situations where hands are occupied or dirty, such as in the kitchen, or for users with speech difficulties.
 
 Watch a demonstration of the Gesture-Controlled Spotify Player here:
-[Gesture-Controlled Spotify Player Demo](https://github.com/Shallange/S.H.I.G.S/assets/53408265/247b3f22-a7fd-4e50-97ee-97aaa33197d8)
+[Gesture-Controlled Spotify Player Demo](https://github.com/Shallange/S.H.I.G.S/assets/53408265/4797a283-7518-4134-845d-6f33afdbda71)
 
 ## Features
 - Control Spotify playback using hand gestures.
@@ -55,6 +55,13 @@ Watch a demonstration of the Gesture-Controlled Spotify Player here:
 - Internet connection
 - Python 3 installed on Raspberry Pi
 
+## Key Libraries Used
+
+### MediaPipe
+[MediaPipe](https://google.github.io/mediapipe/) is an open-source, cross-platform, customizable machine learning solution for live and streaming media. Developed by Google, it's designed to make on-device machine learning more accessible and easy to implement. In this project, we use MediaPipe for real-time hand tracking and gesture recognition. It provides a robust framework for detecting hand landmarks, enabling the Gesture-Controlled Spotify Player to accurately interpret various hand gestures for controlling music playback.
+
+### OpenCV
+[OpenCV (Open Source Computer Vision Library)](https://opencv.org/about/) is an open-source computer vision and machine learning software library. It's designed to provide a common infrastructure for computer vision applications and accelerate the use of machine perception in commercial products. In our project, OpenCV is utilized for image processing and capturing video frames from the Raspberry Pi Camera Module 3. This integration is crucial for detecting hand gestures in real-time.
 
 
 ## Setting Up Spotify Developer App
