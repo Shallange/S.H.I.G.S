@@ -61,7 +61,10 @@ Watch a demonstration of the Gesture-Controlled Spotify Player here:
 [MediaPipe](https://google.github.io/mediapipe/) is an open-source, cross-platform, customizable machine learning solution for live and streaming media. Developed by Google, it's designed to make on-device machine learning more accessible and easy to implement. In this project, we use MediaPipe for real-time hand tracking and gesture recognition. It provides a robust framework for detecting hand landmarks, enabling the Gesture-Controlled Spotify Player to accurately interpret various hand gestures for controlling music playback.
 
 ### OpenCV
-[OpenCV (Open Source Computer Vision Library)](https://opencv.org/about/) is an open-source computer vision and machine learning software library. It's designed to provide a common infrastructure for computer vision applications and accelerate the use of machine perception in commercial products. In our project, OpenCV is utilized for image processing and capturing video frames from the Raspberry Pi Camera Module 3. This integration is crucial for detecting hand gestures in real-time.
+[OpenCV (Open Source Computer Vision Library)](https://opencv.org/about/) is an open-source computer vision and machine learning software library. It's designed to provide a common infrastructure for computer vision applications and accelerate the use of machine perception in commercial products. In this project, OpenCV is utilized for image processing and capturing video frames from the Raspberry Pi Camera Module 3. This integration is crucial for detecting hand gestures in real-time.
+
+### picamera2
+[picamera2](https://www.raspberrypi.org/documentation/accessories/camera.html)is a Python library tailored for Raspberry Pi camera modules, enabling direct access to the camera hardware for capturing high-quality images and video streams. It provides a streamlined interface for efficient video data handling, crucial for applications requiring real-time video processing. In the Gesture-Controlled Spotify Player, picamera2 plays a pivotal role by capturing live video feeds that are essential for gesture recognition. The library's ability to handle real-time video capture with minimal latency is vital for the accurate and responsive interpretation of hand gestures. Its integration ensures that the system can efficiently process video inputs, making it an integral component of the project.
 
 
 ## Setting Up Spotify Developer App
@@ -87,7 +90,6 @@ Remember, these credentials are essential for the authentication process in your
   The following image displays a graph of the Spotify API usage statistics for this project. It shows the number of calls made to various endpoints (play, pause, next, previous, volume) over different dates.
 
   ![Spotify API Usage Statistics](images/spotify_api.png)
-
 
 
 ## Installation
@@ -120,8 +122,10 @@ Remember, these credentials are essential for the authentication process in your
 3. Once authenticated, the camera will start, and you can use hand gestures to control Spotify playback.
 
 ## Mediapipe Hand Landmarks
+MediaPipe's hand tracking identifies key landmarks on the hand, representing important joints and contours. These landmarks are essential for accurately interpreting hand gestures.
 
 - **Hand Landmarks**
+The image below displays the specific landmarks MediaPipe identifies on a hand. Each marked point is crucial for understanding hand movements, enabling the Gesture-Controlled Spotify Player to accurately interpret and respond to gestures.
   ![Hand Landmarks](images/hand-landmarks.png)
 
 ## Gesture Commands
