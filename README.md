@@ -140,13 +140,13 @@ The gesture detection in this project relies on analyzing the positions of hand 
 
 ### Gesture Detection Logic
 The gesture detection logic uses these coordinates to determine the relative positions of different landmarks. For example:
-- **Thumb Folded:** Identified by comparing the y-coordinate of the thumb tip (`landmarks[4][2]`) with the y-coordinate of its lower joint (`landmarks[3][2]`). If the tip's y-coordinate is greater, it indicates a folded thumb.
-- **Palm Orientation:** Determined by comparing the x-coordinates of specific landmarks to determine if the palm is facing up, down, or sideways.
+- **Thumb Folded:** Identified by comparing the z-coordinate of the thumb tip (`landmarks[4][2]`) with the z-coordinate of its lower joint (`landmarks[3][2]`). If the tip's z-coordinate is greater, it indicates a folded thumb.
+- **Palm Orientation for Pause Music:** Determined by comparing the z-coordinates of the wrist and other landmarks to see if the palm is facing upwards.
+- **Palm Orientation for Previous and Next Songs:** Determined by comparing the y-coordinates of specific landmarks to see if the palm is horizontal.
 
 ### Conditions for Specific Gestures
-- **Play Music Gesture:** Detected when the thumb and all other fingers are folded.
-- **Pause Music Gesture:** Identified when the palm's y-coordinate is higher than other landmarks, indicating an open palm facing upwards.
-- **Next and Previous Song Gestures:** Detected based on the orientation of the palm and the back of the hand.
+- **Play Music Gesture:** Detected when the thumb and all other fingers are folded (based on z-coordinates).
+- **Pause Music Gesture:** Identified when the palm's z-coordinate is higher than other landmarks, indicating an open palm facing upwards.
 
 This approach allows the system to interpret complex hand gestures in real-time, enabling intuitive control over Spotify playback.
 
