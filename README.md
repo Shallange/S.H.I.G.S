@@ -29,16 +29,25 @@ Watch a demonstration of the Gesture-Controlled Spotify Player here:
 This section provides an overview of the hardware components used in the project.
 
 ### Raspberry Pi 4
-This is the Raspberry Pi 4 used in the project. It serves as the central processing unit for the gesture recognition and Spotify control.
-<img src="/images/raspberry_pi_4.jpg" alt="Raspberry Pi 4" width="600"/>
+<div>
+    <img src="/images/raspberry_pi_4.jpg" alt="Raspberry Pi 4" width="600" style="float: left; margin-right: 10px;"/>
+    <p>This is the Raspberry Pi 4 used in the project. It serves as the central processing unit for the gesture recognition and Spotify control.</p>
+</div>
+<div style="clear: both;"></div>
 
 ### Raspberry Pi Camera Module 3
-The Raspberry Pi Camera Module 3 is crucial for capturing real-time video for gesture recognition. Here's how it looks in our setup.
-<img src="/images/raspberry_pi_camera.jpg" alt="Raspberry Pi Camera Module 3" width="600" height="650"/>
+<div>
+    <img src="/images/raspberry_pi_camera.jpg" alt="Raspberry Pi Camera Module 3" width="600" height="650" style="float: left; margin-right: 10px;"/>
+    <p>The Raspberry Pi Camera Module 3 is crucial for capturing real-time video for gesture recognition. Here's how it looks in our setup.</p>
+</div>
+<div style="clear: both;"></div>
 
 ### Complete Setup
-Here's the complete setup of the Gesture-Controlled Spotify Player, showing how the Raspberry Pi and the camera module are arranged.
-<img src="/images/complete_setup.jpg" alt="Complete Setup" width="600"/>
+<div>
+    <img src="/images/complete_setup.jpg" alt="Complete Setup" width="600" style="float: left; margin-right: 10px;"/>
+    <p>Here's the complete setup of the Gesture-Controlled Spotify Player, showing how the Raspberry Pi and the camera module are arranged.</p>
+</div>
+<div style="clear: both;"></div>
 
 
 ## Prerequisites
