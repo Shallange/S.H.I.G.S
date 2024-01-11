@@ -3,14 +3,17 @@
 ## Table of Contents
 - [Description](#description)
 - [Features](#features)
-- [Project File Structure](#project-file-structure)
+- [Hardware Setup](#hardware-setup)
 - [Prerequisites](#prerequisites)
+- [Key Libraries Used](#key-libraries-used)
+- [Project File Structure](#project-file-structure)
 - [Setting Up Spotify Developer App](#setting-up-spotify-developer-app)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Mediapipe Hand Landmarks](#mediapipe-hand-landmarks)
 - [Understanding Gesture Detection Conditions](#understanding-gesture-detection-conditions)
 - [Gesture Commands](#gesture-commands)
+
 
 ## Description
 This project provides a gesture-controlled interface for Spotify, allowing users to control music playback through hand gestures. It's particularly useful in situations where hands are occupied or dirty, such as in the kitchen, or for users with speech difficulties.
@@ -22,30 +25,20 @@ Watch a demonstration of the Gesture-Controlled Spotify Player here:
 - Control Spotify playback using hand gestures.
 - Recognize gestures like play, pause, next track, previous track, increase and decrease volume.
 - Utilizes Flask for handling Spotify OAuth and MediaPipe for gesture recognition.
+## Hardware Setup
+This section provides an overview of the hardware components used in the project.
 
-## Project File Structure
+### Raspberry Pi 4
+This is the Raspberry Pi 4 used in the project. It serves as the central processing unit for the gesture recognition and Spotify control.
+<img src="/images/raspberry_pi_4.jpg" alt="Raspberry Pi 4" width="600"/>
 
+### Raspberry Pi Camera Module 3
+The Raspberry Pi Camera Module 3 is crucial for capturing real-time video for gesture recognition. Here's how it looks in our setup.
+<img src="/images/raspberry_pi_camera.jpg" alt="Raspberry Pi Camera Module 3" width="600" height="650"/>
 
-- **images**
-  - [spotify_api.png](/images/spotify_api.png)
-  - [hand-landmarks.png](/images/hand-landmarks.png)
-  - [play_music.jpg](/images/play_music.jpg)
-  - [pause_music.jpg](/images/pause_music.jpg)
-  - [next_song.jpg](/images/next_song.jpg)
-  - [previous_song.jpg](/images/previous_song.jpg)
-  - [increase_volume.jpg](/images/increase_volume.jpg)
-  - [decrease_volume.jpg](/images/decrease_volume.jpg)
-- [README.md](/README.md)
-- [requirements.txt](/requirements.txt)
-- **src**
-  - [auth_code.txt](/src/auth_code.txt)
-  - [auth_server.py](/src/auth_server.py)
-  - **gesture_recognition**
-    - [detector.py](/src/gesture_recognition/detector.py)
-    - [__init__.py](/src/gesture_recognition/__init__.py)
-  - [main.py](/src/main.py)
-  - [spotify_controller.py](/src/spotify_controller.py)
-
+### Complete Setup
+Here's the complete setup of the Gesture-Controlled Spotify Player, showing how the Raspberry Pi and the camera module are arranged.
+<img src="/images/complete_setup.jpg" alt="Complete Setup" width="600"/>
 
 
 ## Prerequisites
@@ -66,6 +59,31 @@ Watch a demonstration of the Gesture-Controlled Spotify Player here:
 
 ### Picamera2
 [Picamera2](https://www.raspberrypi.org/documentation/accessories/camera.html) is a Python library tailored for Raspberry Pi camera modules, enabling direct access to the camera hardware for capturing high-quality images and video streams. It provides a streamlined interface for efficient video data handling, crucial for applications requiring real-time video processing. In the Gesture-Controlled Spotify Player, picamera2 plays a pivotal role by capturing live video feeds that are essential for gesture recognition. The library's ability to handle real-time video capture with minimal latency is vital for the accurate and responsive interpretation of hand gestures. Its integration ensures that the system can efficiently process video inputs, making it an integral component of the project.
+
+## Project File Structure
+
+- **images**
+  - [spotify_api.png](/images/spotify_api.png)
+  - [hand-landmarks.png](/images/hand-landmarks.png)
+  - [play_music.jpg](/images/play_music.jpg)
+  - [pause_music.jpg](/images/pause_music.jpg)
+  - [next_song.jpg](/images/next_song.jpg)
+  - [previous_song.jpg](/images/previous_song.jpg)
+  - [increase_volume.jpg](/images/increase_volume.jpg)
+  - [decrease_volume.jpg](/images/decrease_volume.jpg)
+  - [raspberry_pi_4.jpg](/images/raspberry_pi_4.jpg) 
+  - [raspberry_pi_camera.jpg](/images/raspberry_pi_camera.jpg)  
+  - [complete_setup.jpg](/images/complete_setup.jpg)  
+- [README.md](/README.md)
+- [requirements.txt](/requirements.txt)
+- **src**
+  - [auth_code.txt](/src/auth_code.txt)
+  - [auth_server.py](/src/auth_server.py)
+  - **gesture_recognition**
+    - [detector.py](/src/gesture_recognition/detector.py)
+    - [__init__.py](/src/gesture_recognition/__init__.py)
+  - [main.py](/src/main.py)
+  - [spotify_controller.py](/src/spotify_controller.py)
 
 
 ## Setting Up Spotify Developer App
